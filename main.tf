@@ -1,18 +1,3 @@
-#terraform {
-#  backend "remote" {
-#    hostname = "app.terraform.io"
-#    organization = "rgustafsson"
-#
-#    workspaces {
-#      name = "gcp-compute"
-#    }
-#  }
-#}
-
-#variable "gcp_credentials" {
-#  description = "GCP credentials needed by google provider"
-#}
-
 variable "gcp_project" {
   description = "GCP project name"
 }
@@ -43,11 +28,6 @@ variable "image" {
 }
 
 provider "google"{}
-#provider "google" {
-#  credentials = "${var.gcp_credentials}"
-#  project     = "${var.gcp_project}"
-#  region      = "${var.gcp_region}"
-#}
 
 resource "google_compute_instance" "demo" {
   name         = "${var.instance_name}"
