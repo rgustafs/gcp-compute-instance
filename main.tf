@@ -4,7 +4,7 @@
 #    organization = "rgustafsson"
 #
 #    workspaces {
-      name = "gcp-compute"
+#      name = "gcp-compute"
 #    }
 #  }
 #}
