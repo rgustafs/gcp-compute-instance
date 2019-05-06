@@ -1,13 +1,13 @@
-terraform {
-  backend "remote" {
-    hostname = "app.terraform.io"
-    organization = "rgustafsson"
-
-    workspaces {
+#terraform {
+#  backend "remote" {
+#    hostname = "app.terraform.io"
+#    organization = "rgustafsson"
+#
+#    workspaces {
       name = "gcp-compute"
-    }
-  }
-}
+#    }
+#  }
+#}
 
 #variable "gcp_credentials" {
 #  description = "GCP credentials needed by google provider"
